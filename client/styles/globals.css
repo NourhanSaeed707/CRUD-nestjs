@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import() */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*>*{
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.ant-table-thead > tr >th{
+  color: white !important;
+  background: #191e22 !important;
+}
+
+.ant-btn{
+  border-radius: 5px !important;
+}
+.ant-btn:hover{
+  color: white !important;
+  border:  white !important;
+}
+.edit-button{
+  background-color: rgb(5, 180, 5) !important;
+ 
+}
+.delete-button{
+  background-color: rgb(250, 17, 17) !important;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-inner{
+  position: relative;
+  padding: 40px;
+  padding-right: 50px;
+  width: 100%;
+  max-width:40%;
+  max-height: fit-content;
+  background-color: #fff;
+}
+.popup-inner .close-btn {
+   position: absolute;
+   bottom: 16px;
+   right: 16px;
+}
